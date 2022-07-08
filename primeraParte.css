@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .nav-list a:hover {
+    opacity: 0.7;
+    color: rgb(255, 4, 4);
+  }
+  
+  .logo {
+    font-size: 40px;
+    text-transform: uppercase;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    height: 10vh;
+  }
+  
+  #primeiraParte {
+    background:url(/img/plano-fundo.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-list .item-nav {
+    letter-spacing: 3px;
+    margin-top: 2vh;
+    margin-left: 35px;
+  }
+  
+  .nav-list #logo-insta {
+    letter-spacing: 3px;
+    margin-top: 1vh;
+    margin-left: 35px;
+  }
+  
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+    background: #23232e;
+    transition: 0.5s;
+    z-index: -1;
+  }
+  
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+  }
+  
+  .mobile-menu:hover{
+    opacity: 0.6;
+  }
+  
+  
+  
+  .nav-list.active {
+    transform: translateX(0);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+  
+  
+  #dev{
+    text-align: right;
+    padding-top: 35vh;
+    padding-right: 0VH;
+    width: 96%;
+  }
+  #dev h1{
+    color: rgb(190, 179, 179);
+    font-size: 90px;
+    font-family: Sitka Banner;
+  }
+  
+  #devFullstack{
+    text-align: right;
+    padding-top: 0vh;
+    padding-right: 20VH;
+    width: 96%;
+  }
+  #devFullstack h1{
+    color: rgb(190, 179, 179);
+    font-size: 85px;
+    font-family: Sitka Banner;
+   
+  }
+  
+  #butao{
+    text-align: right;
+    width: 96%;
+    color: white;
+    padding-right: 43VH;
+  }
+  
+  #butao a{
+    font-size: large;
+  }
+  
+  #toltamenteResponsive{
+    text-align: left;
+    color: #fff;
+    padding-top: 20vh;
+    padding-left: 1vh;
+    width: 96%;
+    font-family: Microsoft Himalaya;
+  }
+  
+  
+  
+  #conteudotwo{
+    height: 90vh;
+    width: 100%;
+    border: 1px solid rgb(0, 47, 255);
+  }
+  
+  body { overflow-x: hidden; }
+  
+  
+  /*resposibilidade dos itens 1*/
+  @media (max-width: 823px) {
+    body {
+      overflow-x: hidden;
+    }
+    .nav-list {
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      width: 100vw;
+      height: 92vh;
+      background: #23232e;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+    }
+    .mobile-menu {
+      display: block;
+    }
+    .logo{
+      font-size: 20px;
+      margin-left: 5vh;
+    }
+    #dev h1{
+      color: rgb(190, 179, 179);
+      font-size: 50px;
+      padding-right: 10vh;
+    }
+    #devFullstack h1{
+      color: rgb(190, 179, 179);
+      font-size: 50px;
+    }
+    #butao{
+      text-align: right;
+      padding-right: 26vh;
+      color: white;
+   
+    }
+    #toltamenteResponsive{
+      display: none;
+   }
+  }
+
+ /*responsabilidade 2*/
+@media(max-width:499px){
+    #dev h1{
+        color: rgb(190, 179, 179);
+        font-size: 30px;
+    }
+    #devFullstack h1{
+        color: rgb(190, 179, 179);
+        font-size: 30px;
+    }
+    #butao a{
+        text-align: right;
+        color: white;
+        font-size: small;
+    }
+    #toltamenteResponsive{
+      display: none;
+   }
+}
+
+ /*responsabilidade 3*/
+ @media(max-width:430px){
+    #dev{
+        width: 100%;
+    }
+    #dev h1{
+        color: rgb(190, 179, 179);
+        font-size: 35px;
+        text-align: left;
+        padding-left: 41px;
+    }
+    #devFullstack{
+        width: 100%;
+    }
+    #devFullstack h1{
+        color: rgb(190, 179, 179);
+        font-size: 30px;
+        text-align: left;
+        padding-left: 41px;
+    }
+    #butao{
+        width: 100%;
+        text-align: left;
+        color: white;
+        padding-left: 41px;
+    }
+    #butao a{
+        font-size: 10px;
+    }
+    
+    #toltamenteResponsive{
+       display: none;
+    }
+
+    .nav-list {
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      width: 100vw;
+      height: 92vh;
+      background: #23232e;
+      flex-direction: column;
+      align-items: center;
+      padding-right: 45px;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+    }
+ }
+
+ /*responsabilidade 4*/
+ @media(max-width:1024px) and (max-height:600px){
+  #toltamenteResponsive{
+    display: none;
+ }
+ }
+
+ /*responsabilidade 5*/
+ @media(max-width:360px){
+  #butao a{
+    font-size: 9px;
+}
+
+ }
+
+  
+
