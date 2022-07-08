@@ -32,7 +32,6 @@
     background:url(/img/plano-fundo.jpg) no-repeat center center;
     background-size: cover;
     height: 100vh;
-    background-attachment: fixed;
   }
   
   .nav-list {
