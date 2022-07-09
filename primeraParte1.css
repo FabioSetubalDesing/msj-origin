@@ -33,6 +33,21 @@
     background-size: cover;
     height: 100vh;
   }
+
+  #pelicula{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.8;
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+  }
+
+  #conteudo{
+    position: relative;
+    z-index: 2;
+  }
  
   .nav-list {
     list-style: none;
@@ -108,7 +123,7 @@
     width: 96%;
   }
   #dev h1{
-    color: rgb(190, 179, 179);
+    color: rgb(255, 255, 255);
     font-size: 90px;
     font-family: Sitka Banner;
   }
@@ -120,7 +135,7 @@
     width: 96%;
   }
   #devFullstack h1{
-    color: rgb(190, 179, 179);
+    color: rgb(255, 255, 255);
     font-size: 85px;
     font-family: Sitka Banner;
    
@@ -129,12 +144,18 @@
   #butao{
     text-align: right;
     width: 96%;
-    color: white;
+    color: rgb(46, 44, 44);
     padding-right: 43VH;
   }
   
   #butao a{
     font-size: large;
+    background-color: #212122;
+    border: 1px solid #5f5f69;
+  }
+
+  #butao a:hover{
+    opacity: 0.8;
   }
   
   #toltamenteResponsive{
