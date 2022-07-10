@@ -139,7 +139,6 @@
     padding-top: 0vh;
     padding-right: 20VH;
     width: 96%;
-    border: 1px blue solid;
   }
 
   #devFullstack span{
@@ -274,7 +273,7 @@
         width: 100%;
     }
     #devFullstack span{
-        font-size: 35px;
+        font-size: 30px;
         text-align: left;
         padding-left: 41px;
     }
