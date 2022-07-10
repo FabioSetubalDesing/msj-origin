@@ -271,10 +271,11 @@
     }
     #devFullstack{
         width: 100%;
+        text-align: left;
     }
     #devFullstack span{
         font-size: 30px;
-        text-align: left;
+        
         padding-left: 41px;
     }
     #barra{
@@ -322,6 +323,20 @@
  @media(max-width:360px){
   #butao a{
     font-size: 9px;
+}
+ }
+
+ /*responsabilidade 4*/
+ @media(max-width:924px) and (max-height:422px){
+  #primeiraParte{
+    height: 150vh;
+  }
+  #butao a{
+    font-size: 20px;
+    margin-right: 50px;
+}
+#pelicula{
+  height: 150vh;
 }
 
  }
