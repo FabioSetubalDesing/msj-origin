@@ -11,7 +11,7 @@ var maxSpeed = 500;
 var keepText = true;
 var speed = Math.floor(Math.random()* maxSpeed)+minSpeed;
 
-//tEffect("digitando", "FULL STACK-" , false);
+tEffect("digitando", "FULL STACK-" , false);
 
 function tEffect(text, keep_Text){
     isAlive = true;

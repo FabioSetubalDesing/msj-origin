@@ -139,6 +139,7 @@
     padding-top: 0vh;
     padding-right: 20VH;
     width: 96%;
+    border: 1px blue solid;
   }
 
   #devFullstack span{
@@ -224,12 +225,10 @@
       margin-left: 5vh;
     }
     #dev h1{
-      color: rgb(190, 179, 179);
       font-size: 50px;
       padding-right: 10vh;
     }
     #devFullstack span{
-      color: rgb(190, 179, 179);
       font-size: 50px;
     }
     #butao{
@@ -246,11 +245,9 @@
  /*responsabilidade 2*/
 @media(max-width:499px){
     #dev h1{
-        color: rgb(190, 179, 179);
         font-size: 30px;
     }
     #devFullstack span{
-        color: rgb(190, 179, 179);
         font-size: 30px;
     }
     #butao a{
@@ -269,7 +266,6 @@
         width: 100%;
     }
     #dev h1{
-        color: rgb(190, 179, 179);
         font-size: 35px;
         text-align: left;
         padding-left: 41px;
@@ -278,10 +274,13 @@
         width: 100%;
     }
     #devFullstack span{
-        color: rgb(190, 179, 179);
-        font-size: 30px;
+        font-size: 35px;
         text-align: left;
         padding-left: 41px;
+    }
+    #barra{
+      text-align: left;
+      position:absolute;
     }
     #butao{
         width: 100%;
