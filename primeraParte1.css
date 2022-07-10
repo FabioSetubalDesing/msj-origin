@@ -157,6 +157,7 @@
     animation-duration: 0.7s;
     animation-iteration-count:infinite;
     animation-delay: 0s;
+    font-weight: bold;
   }
   
   #butao{
@@ -179,13 +180,44 @@
   #toltamenteResponsive{
     text-align: left;
     color: #fff;
-    padding-top: 20vh;
-    padding-left: 1vh;
-    width: 96%;
+    padding-top: 18vh;
+    padding-left: 2vh;
     font-family: Microsoft Himalaya;
   }
   
-  
+  #mousemove{
+    padding-left: 28vh;
+    color: #fff;
+    font-family: Microsoft Himalaya;
+    margin-top: 45px;
+  }
+  #mouse{
+    position: relative;
+    height: 50px;
+    width: 30px;
+    border: 2px solid rgb(223, 223, 223);
+    border-radius: 44%;
+}
+#seta{
+    position: relative;
+    font-size: 25px;
+    left: 8.5px;
+    top: 40px;
+    color: rgb(223, 223, 223);
+}
+#scroll{
+    height: 10px;
+    width: 2px;
+    background-color: rgb(204, 190, 190);
+    position: relative;
+    left: 50%;
+    animation: moverScroll 2s infinite;
+}
+
+@keyframes moverScroll {
+    from {top: 0px; opacity: 1;}
+    to {top: 20px; opacity: 0;}
+}
   
   #conteudotwo{
     height: 90vh;
@@ -244,6 +276,9 @@
     #toltamenteResponsive{
       display: none;
    }
+   #mousemove{
+    display: none;
+   }
   }
 
  /*responsabilidade 2*/
@@ -280,12 +315,13 @@
     }
     #devFullstack span{
         font-size: 30px;
-        
         padding-left: 41px;
     }
     #barra{
       text-align: left;
       position:absolute;
+      margin-left: -40px;
+     
     }
     #butao{
         width: 100%;

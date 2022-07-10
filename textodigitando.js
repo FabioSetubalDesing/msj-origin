@@ -20,7 +20,7 @@ function tEffect(text, keep_Text){
     spanText = keep_Text;
 
 
-    running = setInterval(() => loop(), speed)
+    running = setInterval(() => loop(), speed);
     
 }
 
