@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  html{
+    scroll-behavior: smooth;
+  }
   
   a {
     color: #fff;
@@ -85,6 +89,8 @@
   .mobile-menu:hover{
     opacity: 0.6;
   }
+
+ 
   
   
   
@@ -134,11 +140,21 @@
     padding-right: 20VH;
     width: 96%;
   }
-  #devFullstack h1{
+
+  #devFullstack span{
     color: rgb(255, 255, 255);
-    font-size: 85px;
     font-family: Sitka Banner;
-   
+    font-size: 85px;
+  }
+  @keyframes example {
+  from {color: #ff0202;}
+  to {opacity: 0.1;}
+  }
+  #barra{
+    animation-name: example;
+    animation-duration: 0.7s;
+    animation-iteration-count:infinite;
+    animation-delay: 0s;
   }
   
   #butao{
@@ -212,7 +228,7 @@
       font-size: 50px;
       padding-right: 10vh;
     }
-    #devFullstack h1{
+    #devFullstack span{
       color: rgb(190, 179, 179);
       font-size: 50px;
     }
@@ -233,7 +249,7 @@
         color: rgb(190, 179, 179);
         font-size: 30px;
     }
-    #devFullstack h1{
+    #devFullstack span{
         color: rgb(190, 179, 179);
         font-size: 30px;
     }
@@ -261,7 +277,7 @@
     #devFullstack{
         width: 100%;
     }
-    #devFullstack h1{
+    #devFullstack span{
         color: rgb(190, 179, 179);
         font-size: 30px;
         text-align: left;
