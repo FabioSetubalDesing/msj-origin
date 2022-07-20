@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MSJ</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="primeraParte1.css">
+    <link rel="stylesheet" href="css-da-pagina/primeraParte1.css">
   </head>
   <body> 
     <header> 
@@ -26,36 +26,50 @@
                     <li class="item-nav"><a href="#"><b>CONTATO</b></a></li>
                     <li id="logo-insta">
                         <a href="https://www.instagram.com/m.s.j_desenvolvedor/" target="_blank">
-                            <img src="imagem/instagram.png" alt="" height="26px" style="margin-top:8px;">
+                            <img src="css-da-pagina/imagem/instagram.png" alt="" height="26px" style="margin-top:8px;">
                         </a>
                     </li>
                 </ul>
-            </nav>
+            </nav>  
+        </div>    
+        <div id="pelicula">
+            <!-- conteudo -->
 
-            <!--conteudo-->  
-            <div id="conteudo">           
-                <div class="row" id="dev">
-                    <div class="col">
-                        <h1>DESENVOLVEDOR</h1>
-                    </div>
+            <!-- desenvolvedor -->
+            <div class="row" id="dev">
+                <div class="col">
+                    <h1>DESENVOLVEDOR</h1>
                 </div>
-                <div class="row" id="devFullstack">
-                    <div class="col">
+            </div>
+
+            <!-- full stack -->
+            <div class="row" id="devFullstack">
+                <div class="col">
+                    <div id="fullstackMove">
                         <span id="digitando"></span> <span id="barra">_</span>
                     </div>
                 </div>
-                <div class="row" id="butao">
-                    <div class="col">
-                        <a href="#conteudotwo"  class="btn btn-primary" >
-                            CONHEÇA MAIS...
-                        </a>
-                    </div>
+            </div>
+
+            <!-- botão conheça mais -->
+            <div class="row" id="botao">
+                <div class="col">
+                    <a href="#conteudotwo"  class="btn btn-primary" >
+                        CONHEÇA MAIS...
+                    </a>
                 </div>
-                <div class="row">
-                    <div class="col-sm-4" id="toltamenteResponsive">
-                        <p>LAYOUT TOTALMENTE RESPONSIVO</p>
-                    </div>
-                    <div class="col-sm-4" id="mousemove">
+            </div>
+
+            <!--ultima parte da home--> 
+            <div class="row">
+
+            <!-- layout totalmente resposive -->
+                <div class="col" id="toltamenteResponsive" >
+                    <p>LAYOUT TOTALMENTE RESPONSIVO</p>
+                </div>  
+                
+                <div class="col">
+                    <div id="moveMouse">
                         <div id="mouse">
                             <div id="scroll">
                     
@@ -63,24 +77,33 @@
                             <p id="seta">&#129043</p>
                         </div> 
                     </div>
-                </div>             
-            </div>  
-        </div>
-        <div id="pelicula"></div>
-        
+                </div>
+                
+                <!-- whatszap -->
+                <div class="col" > 
+                    <img id="whats" src="css-da-pagina/imagem/whats.png" >  
+                </div>
+
+            </div> 
+
+           
+        </div> 
     </header>
-    
-    <main>
-        <div id="conteudotwo">
-            <h1 id="conteudo2" style="text-align: center;">
-                EM BREVE...
-            </h1>
-            
+
+
+  
+    <div style="width: 100%; height: 100%; position: absolute; top: 100%; background: rgb(233, 231, 231);" >
+    <div class="row">
+        <div class="col">
+            <h1 style="text-align: center ;">EM BREVE...</h1>
         </div>
-        
-    </main>
-    <script src="mobile-nav.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="textodigitando.js" ></script>
+    </div>
+    </div>
+
+     
+  
+
+    <script src="js-da-pagina/mobile-nav.js"></script>
+    <script src="js-da-pagina/textodigitando.js" ></script>
   </body>
 </html>

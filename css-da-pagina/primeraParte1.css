@@ -1,0 +1,445 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  overflow-x: hidden;
+  background-color: #252525;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* barra de navegação */
+
+.nav-list a:hover {
+  opacity: 0.7;
+  color: rgb(54, 255, 4);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  height: 10vh;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list .item-nav {
+  letter-spacing: 3px;
+  margin-top: 2vh;
+  margin-left: 42px;
+}
+
+.nav-list #logo-insta {
+  letter-spacing: 3px;
+  margin-top: 0.5vh;
+  margin-left: 35px;
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+.logo {
+  margin-top: 1%;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.logo:hover{
+  color: white;
+  opacity: 0.5;
+}
+
+/* div hamburguer */
+@keyframes navLinkFade {  
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* resposabilidade da NAV */
+@media(min-width:150px) and (min-height:1086px){
+
+  .nav-list #logo-insta{
+      margin-top: 1vh;
+  }
+
+  .item-nav{
+  padding-left: 3%;
+  } 
+
+  .logo{
+      margin-top: 1.9vh;
+  }
+}
+
+/* mobile menu barra navegação */
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  margin: 8px;
+  transition: 0.3s;
+  background-color: #ffffff;
+}
+
+.mobile-menu:hover{
+  opacity: 0.6;
+}
+
+.dropdown-menu {
+  background: none;
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+/* transfromando a barra de navegacão para mobile */
+@media (max-width: 1000px) {
+  .nav-list {
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      width: 50vw;
+      height: 92vh;
+      background: #23232e;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+  }
+  .nav-list li {
+      margin-right: 50px;
+      opacity: 0;
+  }
+  .mobile-menu {
+      display: block;
+  }
+  .logo{
+      margin-top: 1.3vh;
+  }
+
+}
+
+/* transfromando a barra de navegacão para mobile 2*/
+@media (max-height:920px){
+  .logo{
+      margin-top: 1.9vh;
+  }
+}
+
+/* imagem da primeira parte */
+#primeiraParte{
+  background: url("imagem/planoFundo.jpg") fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+/* pelicula por cima da imagem e contem toda a parte da home */
+#pelicula{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.8;
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+}
+
+/* escrita desenvolvedor */
+#dev{
+  text-align: right;
+  padding-top: 35vh;
+  width: 100%;
+}
+
+#dev h1{
+  color: rgb(255, 255, 255);
+  font-size: 90px;
+  font-family: Sitka Banner;
+  margin-right: 8%;
+}
+
+/* resposabilidade escrita desenvolvedor 1*/
+@media(min-width:150px) and (min-height:1086px){
+  #dev h1{
+      font-size: 110px;
+  }
+}
+
+/* resposabilidade escrita desenvolvedor 2*/
+@media(max-width:700px){
+  #dev h1{
+      font-size: 45px;
+  }
+}
+
+@media(max-width:300px){
+  #dev h1{
+      font-size: 35px;
+  }
+}
+
+/* desevolvedor full stack escrita */
+#devFullstack{
+  text-align: right; 
+  width: 100%;
+}
+
+#devFullstack span{
+  color: rgb(255, 255, 255);
+  font-family: Sitka Banner;
+  font-size: 90px;
+}
+
+#fullstackMove{
+  margin-right: 15%;
+}
+
+/* resposabilidade escrita full stack 1*/
+@media(min-width:150px) and (min-height:1086px){
+  #devFullstack span{
+      font-size: 110px;
+  }
+  #fullstackMove{
+      margin-right: 12%;
+  }
+}
+
+/* resposabilidade escrita full stack 2*/
+@media(max-width:700px){
+  #devFullstack span{
+      font-size: 45px;
+  }
+}
+
+/* resposabilidade escrita full stack 3*/
+@media(max-width:300px){
+  #devFullstack span{
+      font-size: 35px;
+  }
+}
+
+/* barra de digitação */
+@keyframes barra{
+  from {color: #ff0202;}
+  to {opacity: 0.1;}
+}
+#barra{
+  animation-name: barra;
+  animation-duration: 0.7s;
+  animation-iteration-count:infinite;
+  animation-delay: 0s;
+  font-weight: bold;
+}
+
+/* botão conheça mais */
+#botao{
+  text-align: right;
+  width: 100%;
+  color: rgb(46, 44, 44);
+}
+
+#botao a{
+  font-size: large;
+  background-color: #080f24;
+  border: 1px solid #c0b4b4;
+  margin-right: 30%;
+  opacity: 10;
+}
+
+#botao a:hover{
+  opacity: 0.8;
+}
+
+/* resposabilidade botao 1*/
+@media(min-width:150px) and (min-height:1086px){
+  #botao a{
+      font-size: 40px;
+      margin-right: 19%;
+  }
+}
+
+/* resposabilidade escrita botao 2*/
+@media(max-width:700px){
+  #devFullstack span{
+      font-size: 45px;
+  }
+}
+
+/* resposabilidade escrita botao 3*/
+@media(max-width:300px){
+  #devFullstack span{
+      font-size: 35px;
+  }
+}
+
+
+/* escrita totalmente resposive */
+#toltamenteResponsive{
+  text-align: left;
+  font-family: Microsoft Himalaya;
+}
+
+#toltamenteResponsive p{
+  position: relative;
+  top: 20%;
+  margin-top: 20%;
+  color: rgb(255, 255, 255);
+}
+
+/* resposabilidade totalmente resposive1*/
+@media(min-width:150px) and (min-height:1086px){
+  #toltamenteResponsive p{
+      top: 7%;
+      margin-top: 41%;
+      font-size: 30px;
+  }
+}
+
+/* resposabilidade escrita totalmente resposive 2*/
+@media(max-width:920px){
+  #toltamenteResponsive p{
+      display: none;
+  }
+}
+
+/* mouse com scroll e a seta do elemento P */
+#moveMouse{
+margin-left: 45%;
+margin-top: 11%;
+}
+
+#mouse{
+  position: relative;
+  height: 50px;
+  width: 30px;
+  border: 2px solid rgb(223, 223, 223);
+  border-radius: 44%;
+}
+
+
+#scroll{
+  height: 10px;
+  width: 2px;
+  background-color: rgb(204, 190, 190);
+  position: relative;
+  left: 50%;
+  animation: moverScroll 2s infinite;
+}
+
+/* movimentar o scroll */
+@keyframes moverScroll {
+  from {top: 0px; opacity: 1;}
+  to {top: 20px; opacity: 0;}
+}
+
+/* seta do elemnto P abaixo do mouse */
+#seta{
+  position: relative;
+  font-size: 25px;
+  left: 8.5px;
+  top: 40px;
+  color: rgb(223, 223, 223);
+}
+
+/* resposabilidade mouse com scroll e a seta do elemento P 1*/
+@media(min-width:150px) and (min-height:1086px){
+  #mouse{
+      height: 100px;
+      width: 60px;
+  }
+
+  #scroll{
+      height: 20px;
+  }
+
+  #seta{
+      font-size: 50px;
+      left: 19.5px;
+      top: 80px;
+  }
+
+  #moveMouse{
+      margin-top: 25%;
+  }
+
+}
+
+/* resposabilidade mouse com scroll e a seta do elemento P 2*/
+@media(max-width:920px){
+  #moveMouse{
+     display: none;
+  }
+}
+
+/* whatszap */
+#whats{
+  position: fixed;
+  left: 94%;
+  top: 89%;
+  width:70px; 
+  height:70px;
+  opacity: 0.5;
+}
+
+/* resposabilidade whatszap 1*/
+@media(min-width:150px) and (min-height:1086px){
+  #whats{
+      width:100px; 
+      height:100px;
+  }
+}
+
+/* resposabilidade whatszap 2*/
+@media(max-width:700px){
+  #whats{
+      top: 89%;
+      left: 80%;
+  }
+}
+
+/* resposabilidade whatszap 3*/
+@media(max-width:300px){
+  #whats{
+      top: 80%;
+      left: 70%;
+  }
+}
